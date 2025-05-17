@@ -1,12 +1,78 @@
-# React + Vite
+# Quiz Master
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quiz Master is a modern, interactive quiz web application built with React and Vite. It allows users to test their knowledge with personalized quizzes, timed challenges, and instant feedback. The app features smooth animations, responsive design, and a user-friendly interface.
 
-Currently, two official plugins are available:
+## Features
+- Personalized quizzes that adapt to your skill level
+- Timed challenges to improve speed and accuracy
+- Progress tracking with detailed analytics
+- Instant feedback after each question
+- Responsive and visually appealing UI
+- Animated transitions and scroll effects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
 
-## Expanding the ESLint configuration
+### Home Page
+![Home 1](public/home1.png)
+![Home 2](public/home2.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Quiz Page
+![Quiz](public/quiz.png)
+
+### Result Page
+![Result](public/result.png)
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```powershell
+   git clone <your-repo-url>
+   cd quiz-app
+   ```
+2. Install dependencies:
+   ```powershell
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```powershell
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open your browser and go to `http://localhost:5173` (or the port shown in your terminal).
+
+## Project Structure
+```
+quiz-app/
+├── public/
+│   ├── home1.png
+│   ├── home2.png
+│   ├── quiz.png
+│   ├── result.png
+│   └── vite.svg
+├── src/
+│   ├── component/
+│   ├── context/
+│   ├── data/
+│   ├── hooks/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── ...
+```
+
+## Credits
+- Built with [React](https://react.dev/) and [Vite](https://vitejs.dev/)
+- Animations powered by [GSAP](https://greensock.com/gsap/)
+
+## License
+This project is for educational purposes.

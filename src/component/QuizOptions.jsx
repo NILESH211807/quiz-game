@@ -1,9 +1,12 @@
 import React from 'react'
 
 const QuizOptions = ({ options, onSelect, selectedOption, currectAnswer, disabled }) => {
+    // Check if any option is longer than 20 characters
+    const isLongOption = options?.some(opt => opt.length > 20);
+    const gridClass = isLongOption ? 'grid gap-5 grid-cols-1' : 'grid gap-5 min-[600px]:grid-cols-2 grid-cols-1';
 
     return (
-        <ul className="grid gap-5 min-[600px]:grid-cols-2 grid-cols-1">
+        <ul className={gridClass}>
             {options?.map((opt, idx) => (
                 <li key={idx}
                     onClick={() => disabled ? "" : onSelect(opt)}

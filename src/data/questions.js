@@ -1,30 +1,27 @@
-// dummy question 
-
 export const questions = [
     {
-        question: "What is the largest ocean on Earth?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        answer: "Pacific Ocean"
+        question: "What does HTML stand for?",
+        options: ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Text Making Language"],
+        answer: "Hyper Text Markup Language"
     },
     {
-        question: "Who wrote the play 'Romeo and Juliet'?",
-        options: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy", "Mark Twain"],
-        answer: "William Shakespeare"
+        question: "Which property is used in CSS to change the text color of an element?",
+        options: ["font-color", "text-style", "color", "text-color"],
+        answer: "color"
     },
     {
-        question: "What gas do plants absorb from the atmosphere?",
-        options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-        answer: "Carbon Dioxide"
+        question: "Which tag is used to include JavaScript in an HTML file?",
+        options: ["<js>", "<script>", "<javascript>", "<code>"],
+        answer: "<script>"
     },
     {
-        question: "Which element has the chemical symbol 'O'?",
-        options: ["Gold", "Oxygen", "Silver", "Iron"],
-        answer: "Oxygen"
+        question: "What does the `===` operator do in JavaScript?",
+        options: ["Compares values only", "Assigns a value", "Compares both value and type", "Checks for inequality"],
+        answer: "Compares both value and type"
     },
     {
-        question: "In which year did the first man land on the moon?",
-        options: ["1965", "1969", "1972", "1959"],
-        answer: "1969"
+        question: "Which CSS property controls the size of text?",
+        options: ["font-weight", "text-size", "font-size", "text-style"],
+        answer: "font-size"
     }
 ];
-

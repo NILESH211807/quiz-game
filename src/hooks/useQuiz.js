@@ -43,9 +43,9 @@ const useQuiz = () => {
         totalQuestions: questions.length,
         showResult,
         currectAnswer: questions[current]?.answer,
-        selectedOption, // Add the selected option to the return object
+        selectedOption, 
         selectOption: handleAnswer,
-        disabled, // Add the disabled state to the return object
+        disabled, 
         setCurrent,
         setShowResult,
         resetQuiz

@@ -14,15 +14,6 @@ const QuizTimer = ({ selectOption,
     useEffect(() => {
         if (timeLeft === 0) {
             setShowResult(true);
-            // setCurrent(prev => {
-            //     if (prev + 1 < totalQuestions) {
-            //         return prev + 1;
-            //     }
-            //     setShowResult(true);
-            //     return prev;
-            // });
-            // setTimeLeft(30);
-            // return;
         }
         timerRef.current = setTimeout(() => {
             if (timeLeft > 0) {
