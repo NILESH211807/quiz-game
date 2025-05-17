@@ -57,54 +57,6 @@ const Quiz = () => {
             }, "-=0.3");
     }, []);
 
-    // Animation for question change
-    useEffect(() => {
-        if (currentQuestion > 0) {
-            // Fade out current question and options
-            gsap.to([questionRef.current, optionsRef.current.children], {
-                y: -20,
-                opacity: 0,
-                duration: 0.3,
-                ease: "power2.in",
-                stagger: 0.1
-            });
-
-            // Fade in new question and options
-            setTimeout(() => {
-                gsap.fromTo(questionRef.current,
-                    {
-                        y: 40,
-                        opacity: 0,
-                        scale: 0.95
-                    },
-                    {
-                        y: 0,
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.5,
-                        ease: "power3.out"
-                    }
-                );
-
-                gsap.fromTo(optionsRef.current.children,
-                    {
-                        y: 30,
-                        opacity: 0,
-                        scale: 0.95
-                    },
-                    {
-                        y: 0,
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.5,
-                        stagger: 0.15,
-                        ease: "back.out(1.7)"
-                    }
-                );
-            }, 300);
-        }
-    }, [currentQuestion]);
-
     // navigate to result page
     useEffect(() => {
         if (showResult) {
