@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+:root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-libre-franklin: 'Libre Franklin', sans-serif;
+}
+
+.font1 {
+    font-family: var(--font-montserrat);
+}
+
+.font2 {
+    font-family: var(--font-libre-franklin);
+}
